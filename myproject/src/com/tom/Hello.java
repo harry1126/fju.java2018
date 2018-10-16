@@ -21,6 +21,20 @@ public class Hello {
 		p.hello();
 //		Person Harry =new Person();
 //		Person jack = null;
+//		jack.hello();
+		Student stu = new Student("Harry",70,90);
+		Student f  = new Student("Andy",60,80);
+		Student ss = new Student("Mary",50,70);
+//		stu.name = "Harry";
+//		stu.english = 70;
+//		stu.math = 90; 
+		stu.print();
+	    f.print();
+		ss.print();
+		System.out.println( 4 <= 6 );
+		String s1 = new String("abc");
+		String s2 = new String("abc");
+		System.out.println(s1.equals(s2));
 	}
 
 }
