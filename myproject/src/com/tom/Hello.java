@@ -1,5 +1,6 @@
 package com.tom;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Hello {
@@ -12,7 +13,7 @@ public class Hello {
 //		float height = 1.7f;
 //		String scoolYear = "2018";
 //		System.out.print("age=");
-//		System.out.println(age=18);
+//		System.out.println(age);
 //		System.out.println("weight=55.4");
 //		System.out.println("height=1.7 ");
 //		System.out.println("scoolYear=2018");\*
@@ -39,8 +40,28 @@ public class Hello {
 		System.out.print("Your name:");
 		String name = scanner.nextLine();
 		System.out.println(name);
+		String nick = "Harry";
+		int m = (5%3);
+		int r =(int)(3/5.0);
+		System.out.println(m);
+		System.out.println(r);
+		float n = 11.2655f;
+		System.out.printf("Hi,%s,Your age:%.3f\n",nick,n);
+		double c = 24.0;
+		System.out.print("F=");
+		System.out.println(c*(9/5.0)+32);
+		
+		System.out.println("");
+		Random random = new Random();
+		int secret = random.nextInt(100)+1;
+		System.out.println(secret);
+		
+
+			
+		}
+		
 		
 	}
 	
 
-}
+
