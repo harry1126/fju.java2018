@@ -56,7 +56,10 @@ public class Hello {
 		int secret = random.nextInt(100)+1;
 		System.out.println(secret);
 		
-
+		for(int i=1;i<=5;i++){
+			System.out.println(i);
+			
+		}
 			
 		}
 		
