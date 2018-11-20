@@ -7,24 +7,26 @@ public class SecretNumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Number n;
 		Random random = new Random();
 		Scanner scanner = new Scanner(System.in);
 		int secret = random.nextInt(10)+1;
 		System.out.println(secret);
-		int number = scanner.nextInt();
-		System.out.println("Your guess: "+number);
-		if(number>secret) {
-			System.out.println("lower");
-		}else{
-			if(number==secret){
-				System.out.println("higher");
+			int number = scanner.nextInt();
+			n = new Number(secret,number);
+			System.out.println("Your guess: "+number);	
+			if(n.a()){
+				System.out.println("lower");
 			}else{
-				System.out.println("Great! The secret number is "+secret);
+				if(n.b()){
+					System.out.println("higher");
+				}
+			}if(n.c()){
+				System.out.println("Great!");
+				
 			}
 				
-		}
-		 
+			}
+			
 		
-	}
-
 }
